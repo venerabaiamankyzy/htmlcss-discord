@@ -9,35 +9,50 @@
 }
 
 .header-nav {
+	display: flex;
 	flex-grow: 1;
 	line-height: 30px;
 }
 
 .header-nav>* {
-	flex-basis: 50%;
+	flex-basis: 20%;
 	padding: 5px 10px;
+}
 
-	/* debug */
-	background-color: goldenrod;
-	border: 2px dashed black;
+.logo-img {
+	display: block;
+}
+
+.logo-link {
+	text-align: center;
 }
 
 .header-links {
+	display: flex;
 	flex-grow: 1;
-	text-align: center;
-	
+	align-items: center;
+	justify-content: center;
 }
 
-a {
+.header-links>a {
 	text-decoration: none;
 	color: white;
 	padding: 0 20px;
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .header-login {
 	text-align: right;
+}
+
+.header-login>button {
+	color: black;
+	background-color: #ffff;
+	border-radius: 20px;
+	border: 1px solid white;
+	padding: 2px 20px;
+	font-weight: 600;
 }
 
 /* JUMBOTRON */
@@ -62,17 +77,49 @@ a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	margin: 20px;
-
+	margin-bottom: 40px;
 }
 
 .hero-desc {
-	font-size: 24px;
+	font-size: 22px;
 	color: white;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6em
+	line-height: 1.5em
+}
+.hero-buttons {
+	
+	margin-top: 35px;
+	text-align: center;
+  cursor: pointer;
+}
+.bt1 {
+	text-decoration: none;
+	background-color: #ffff;
+	color: black;
+	border: 1px solid #ffff;
+	border-radius: 28px;
+	padding: 16px 32px;
+	margin-right: 20px;
+	font-size: 20px;
+	font-weight: 500;
+
 }
 
+i {
+	padding: 10px 10px;
+}
+
+.bt2 {
+	text-decoration: none;
+	background-color: rgb(54, 57, 62);
+	color: white;
+	border: 1px solid rgb(54, 57, 62);
+	border-radius: 28px;
+	padding: 16px 32px;
+	font-size: 20px;
+	font-weight: 500;
+}
 /* MAIN & SECTIONS */
 
 main>section {
@@ -81,33 +128,65 @@ main>section {
 
 main>section>.container {
 	display: flex;
-
+	padding-top: 60px;
+	
 	/* debug */
 	min-height: 500px;
 }
+.side-col{
+margin: 10px 80px 40px 80px;
+}
 
+.main-col-img {
+	max-width: 700px;
+	max-height: 440px;
+	object-fit: cover;
+  border-radius: 10px;
+}
+
+.side-col-title {
+	font-size: 58px;
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 30px;
+
+}
+
+.side-col-tx {
+font-size: 20px;
+line-height: 1.6;
+font-weight: 300;
+}
 .bg-white {
 	background-color: white;
 }
 
 .bg-gray {
-	background-color: lightgray;
+	background-image: url(../img/wave.svg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	;
+	
+}
+wave.svg
+.wave-1hkxOo {
+	color: rgb(246, 246, 246);
 }
 
 .main-col {
 	flex-grow: 2;
 
 	/* debug */
-	background-color: cornflowerblue;
-	border: 2px dashed black;
+	/* background-color: cornflowerblue;
+	border: 2px dashed black; */
 }
 
 .side-col {
 	flex-grow: 1;
 
 	/* debug */
-	background-color: pink;
-	border: 2px dashed black;
+	/* background-color: pink;
+	border: 2px dashed black; */
 }
 
 .hilighted-content {
